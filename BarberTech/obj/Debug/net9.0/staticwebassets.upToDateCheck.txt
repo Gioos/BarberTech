@@ -1,0 +1,2 @@
+C:\Users\gioos\source\repos\BarberTech\BarberTech\wwwroot\favicon.ico
+wwwroot\favicon.ico
