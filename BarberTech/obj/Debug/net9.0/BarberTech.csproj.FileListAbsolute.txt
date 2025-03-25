@@ -181,4 +181,5 @@ C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\refint\Barber
 C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\BarberTech.pdb
 C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\BarberTech.genruntimeconfig.cache
 C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\ref\BarberTech.dll
+C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\BarberTech.sourcelink.json
 C:\Users\gioos\source\repos\BarberTech\BarberTech\obj\Debug\net9.0\staticwebassets.upToDateCheck.txt

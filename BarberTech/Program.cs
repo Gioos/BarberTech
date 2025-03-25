@@ -1,6 +1,11 @@
 using BarberTech.Components;
 using BarberTech.Components.Account;
 using BarberTech.Data;
+using BarberTech.Models;
+using BarberTech.Repositories.Agendamentos;
+using BarberTech.Repositories.Barbeiros;
+using BarberTech.Repositories.Clientes;
+using BarberTech.Repositories.Especialidades;
 using Microsoft.AspNetCore.Components.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -19,6 +24,13 @@ builder.Services.AddCascadingAuthenticationState();
 builder.Services.AddScoped<IdentityUserAccessor>();
 builder.Services.AddScoped<IdentityRedirectManager>();
 builder.Services.AddScoped<AuthenticationStateProvider, IdentityRevalidatingAuthenticationStateProvider>();
+
+//injecao de dependencia dos contratos e implementacoes
+builder.Services.AddScoped<IAgendamentoRepository, AgendamentoRepository>();
+builder.Services.AddScoped<IBarbeiroRepository, BarbeiroRepository>();
+builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
+builder.Services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
+
 
 builder.Services.AddAuthentication(options =>
     {

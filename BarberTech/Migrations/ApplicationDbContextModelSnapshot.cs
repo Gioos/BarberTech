@@ -136,6 +136,9 @@ namespace BarberTech.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("DataCadastro")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Documento")
                         .IsRequired()
                         .HasColumnType("NVARCHAR(11)");
