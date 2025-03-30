@@ -7,20 +7,8 @@
       "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\components\\pages\\home.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|c:\\users\\gioos\\source\\repos\\barbertech\\barbertech\\repositories\\agendamentos\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\repositories\\agendamentos\\agendamentorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|c:\\users\\gioos\\source\\repos\\barbertech\\barbertech\\models\\agendamentosanuais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\models\\agendamentosanuais.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|c:\\users\\gioos\\source\\repos\\barbertech\\barbertech\\components\\account\\shared\\accountlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\components\\account\\shared\\accountlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|c:\\users\\gioos\\source\\repos\\barbertech\\barbertech\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\components\\layout\\loginlayout.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|c:\\users\\gioos\\source\\repos\\barbertech\\barbertech\\components\\pages\\agendamentos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{983FEE52-760A-4AD6-AA3A-D6A05C901F6C}|BarberTech\\BarberTech.csproj|solutionrelative:barbertech\\components\\pages\\agendamentos\\index.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 116,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,67 +30,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AgendamentoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Repositories\\Agendamentos\\AgendamentoRepository.cs",
-              "RelativeDocumentMoniker": "BarberTech\\Repositories\\Agendamentos\\AgendamentoRepository.cs",
-              "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Repositories\\Agendamentos\\AgendamentoRepository.cs",
-              "RelativeToolTip": "BarberTech\\Repositories\\Agendamentos\\AgendamentoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T03:18:06.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AgendamentosAnuais.cs",
-              "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Models\\AgendamentosAnuais.cs",
-              "RelativeDocumentMoniker": "BarberTech\\Models\\AgendamentosAnuais.cs",
-              "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Models\\AgendamentosAnuais.cs",
-              "RelativeToolTip": "BarberTech\\Models\\AgendamentosAnuais.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T03:17:40.056Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Home.razor",
               "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Pages\\Home.razor",
               "RelativeDocumentMoniker": "BarberTech\\Components\\Pages\\Home.razor",
               "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Pages\\Home.razor",
               "RelativeToolTip": "BarberTech\\Components\\Pages\\Home.razor",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAmwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T03:16:09.848Z",
+              "WhenOpened": "2025-03-30T00:44:48.026Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AccountLayout.razor",
-              "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Account\\Shared\\AccountLayout.razor",
-              "RelativeDocumentMoniker": "BarberTech\\Components\\Account\\Shared\\AccountLayout.razor",
-              "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Account\\Shared\\AccountLayout.razor",
-              "RelativeToolTip": "BarberTech\\Components\\Account\\Shared\\AccountLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Index.razor",
+              "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Pages\\Agendamentos\\Index.razor",
+              "RelativeDocumentMoniker": "BarberTech\\Components\\Pages\\Agendamentos\\Index.razor",
+              "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Pages\\Agendamentos\\Index.razor",
+              "RelativeToolTip": "BarberTech\\Components\\Pages\\Agendamentos\\Index.razor",
+              "ViewState": "AgIAABYAAAAAAAAAAAAowCIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T03:09:34.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LoginLayout.razor",
-              "DocumentMoniker": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Layout\\LoginLayout.razor",
-              "RelativeDocumentMoniker": "BarberTech\\Components\\Layout\\LoginLayout.razor",
-              "ToolTip": "C:\\Users\\gioos\\source\\repos\\BarberTech\\BarberTech\\Components\\Layout\\LoginLayout.razor",
-              "RelativeToolTip": "BarberTech\\Components\\Layout\\LoginLayout.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-25T03:08:30.874Z",
+              "WhenOpened": "2025-03-29T22:23:13.831Z",
               "EditorCaption": ""
             }
           ]

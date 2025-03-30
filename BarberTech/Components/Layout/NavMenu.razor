@@ -7,8 +7,10 @@
     <MudNavLink Href="clientes" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.EmojiPeople">Clientes</MudNavLink>
     <MudNavLink Href="barbeiros" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Person2">Barbeiros</MudNavLink>
     <MudNavLink Href="agendamentos" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Schedule">Agendamentos</MudNavLink>
+    <MudNavLink Href="dashboard" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Dashboard">Dashboard</MudNavLink>
+    <MudNavLink Href="auth" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.List">Auth Required</MudNavLink>
 
-    <MudNavLink Href="auth" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Lock">Auth Required</MudNavLink>
+
     <AuthorizeView>
         <Authorized>
             <MudNavLink Href="Account/Manage" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Person">@context.User.Identity?.Name</MudNavLink>
@@ -25,7 +27,10 @@
             <MudNavLink Href="Account/Login" Match="NavLinkMatch.Prefix" Icon="@Icons.Material.Filled.Password">Login</MudNavLink>
         </NotAuthorized>
     </AuthorizeView>
+
+
 </MudNavMenu>
+
 
 
 @code {

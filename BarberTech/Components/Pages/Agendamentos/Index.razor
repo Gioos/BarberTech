@@ -7,12 +7,12 @@
 
 
 <MudButton Variant="Variant.Filled"
-           StartIcon="@Icons.Material.Filled.Add"
+           StartIcon="@Icons.Material.Filled.Newspaper"
            Color="Color.Info"
            Size="Size.Large"
            Href="/agendamentos/create"
            Class="mt-md-4 mb-4">
-    ✂️ Novo Agendamento
+    Criar Novo
 </MudButton>
 
 <MudStack Row Wrap="Wrap.Wrap">
@@ -21,20 +21,29 @@
     {
         <MudPaper Class="pa-2 mt-1 border-dashed" Outlined="true">
 
-            <MudText Class="d-flex justify-center" Typo="Typo.h5">💈Agendamento💈</MudText>
+            <MudText Class="d-flex justify-center" Typo="Typo.h5"></MudText>
 
             <MudStack Row Class="mt-4">
+                <MudIcon Icon="@Icons.Material.Filled.HowToReg" Color="Color.Info" />
                 <MudText>@agendamento.Barbeiro.Nome</MudText>
-                <MudIcon Icon="@Icons.Material.Filled.Timer" />
+                <MudIcon Icon="@Icons.Material.Filled.FaceRetouchingNatural" Color="Color.Info" />
                 <MudText>@agendamento.Cliente.Nome</MudText>
             </MudStack>
-
-            <MudText Class="mt-4" Typo="Typo.body2">@(agendamento.Descricao ?? "Sem observações...")</MudText>
+            
+            
+            <MudText Class="mt-4" Typo="Typo.body2">
+                    <MudText>Serviço: @(agendamento.Descricao ?? "Sem observações...") </MudText>
+            </MudText>
+                
 
             <MudDivider Class="mt-4 mb-4" />
 
             <MudStack Row Class="d-flex justify-content-between mt-4 mb-2">
-                <MudChip T="string" Color="Color.Primary">@agendamento.Data.ToString("dd/MM/yyyy") às @agendamento.Horario</MudChip>
+
+                <MudChip T="string" Variant="Variant.Text" Color="Color.Info">
+                    Data: @agendamento.Data.ToString("dd/MM/yyyy") Hora:  @agendamento.Horario
+                </MudChip>
+
                 <MudFab Size="Size.Small"
                         @onclick="@(()=> DeleteAgendamento(agendamento))"
                         StartIcon="@Icons.Material.Filled.Delete"

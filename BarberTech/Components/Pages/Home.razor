@@ -1,78 +1,119 @@
 ﻿@page "/"
-@using BarberTech.Models
-@using BarberTech.Repositories.Agendamentos
-@using System.Globalization
-@inject IAgendamentoRepository repository
 
-<PageTitle>DASHBOARD</PageTitle>
+<MudContainer>
+    <MudGrid Justify="Justify.Center">
+        <MudItem xs="12" sm="8" md="6" TextAlign="TextAlign.Center">
+            <MudText Align="Align.Center" Typo="Typo.h5">
+                Bem-vindo ao <b>BarberTech</b>!
+            </MudText>
 
-<MudText Typo="Typo.h3" Class="d-flex justify-content-center">DASHBOARD</MudText>
+            <MudText Align="Align.Center" Typo="Typo.h6">
+                A solução completa para gestão de barbearias.
+            </MudText>
+        </MudItem>
+    </MudGrid>
 
-<div>
-    <MudPaper Class="pa-4">
-        <MudChart ChartType="ChartType.Bar"
-                  ChartSeries="@Series"
-                  XAxisLabels="@XAxisLabels"
-                  ChartOptions="@Options"
-                  Width="100%"
-                  Height="350px" />
-    </MudPaper>
-</div>
+    <MudGrid class="mt-5">
+        <MudItem xs="12" sm="6" md="3">
+            <MudCard>
+                <MudCardContent>
+                    <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                        <MudIcon Icon="@Icons.Material.Filled.Schedule" Size="Size.Large" />
+                        <MudText Typo="Typo.h6"><b>AGENDAMENTOS</b></MudText>
+                    </MudStack>
+                    Permite agendamentos de forma rápida e eficiente.
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
 
-<div>
-    <MudPaper Class="pa-4">
-        <MudChart ChartType="ChartType.Pie"
-                  InputData="@data"
-                  InputLabels="@labels"
-                  Width="100%"
-                  Height="300px" />
-    </MudPaper>
-</div>
+        <MudItem xs="12" sm="6" md="3">
+            <MudCard>
+                <MudCardContent>
+                    <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                        <MudIcon Icon="@Icons.Material.Filled.People" Size="Size.Large" />
+                        <MudText Typo="Typo.h6"><b>GESTÃO DE CLIENTES</b></MudText>
+                    </MudStack>
+                    Mantenha um banco de dados organizado e completo sobre seus clientes.
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="3">
+            <MudCard>
+                <MudCardContent>
+                    <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                        <MudIcon Icon="@Icons.Material.Filled.Person" Size="Size.Large" />
+                        <MudText Typo="Typo.h6"><b>CONTROLE DE BARBEIROS</b></MudText>
+                    </MudStack>
+                    Gerencie a disponibilidade e os horários dos profissionais.
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+
+        <MudItem xs="12" sm="6" md="3">
+            <MudCard>
+                <MudCardContent>
+                    <MudStack Direction="Row" AlignItems="AlignItems.Center" Spacing="1">
+                        <MudIcon Icon="@Icons.Material.Filled.DataExploration" Size="Size.Large" />
+                        <MudText Typo="Typo.h6"><b>DASHBOARD DE AGENDAMENTOS</b></MudText>
+                    </MudStack>
+                    Observe dados de forma prática, facilitando a análise e monitoramento das informações.
+                </MudCardContent>
+            </MudCard>
+        </MudItem>
+    </MudGrid>
+    <MudSpacer /> <br />
+
+
+
+    <MudExpansionPanels>
+        <br />
+        <MudExpansionPanel>
+            <TitleContent>
+                <div class="d-flex">
+                    <MudIcon Icon="@Icons.Material.Filled.Info" class="mr-3"></MudIcon>
+                    <MudText>Detalhes do projeto</MudText>
+                </div>
+            </TitleContent>
+            <ChildContent>
+
+                <MudListItem T="string">
+                    <MudText Align="Align.Left" Typo="Typo.body1" GutterBottom="true">
+                        👨‍💻 Desenvolvido por: Giovani Santos Cardoso
+                    </MudText>
+
+                </MudListItem>
+
+                <MudListItem T="string">
+                    <MudText Align="Align.Left" Typo="Typo.body2">
+                        🌐 LinkedIn: <a href="https://www.linkedin.com/in/giovani-santos-cardoso/" target="_blank">https://www.linkedin.com/in/giovani-santos-cardoso/</a>
+                    </MudText>
+                </MudListItem>
+                <MudListItem T="string">
+                    <MudText Align="Align.Left" Typo="Typo.body2">
+                        🌐 GitHub: <a href="https://github.com/Gioos" target="_blank">https://github.com/Gioos</a>
+                    </MudText>
+                </MudListItem>
+
+
+                <MudText Align="Align.Center" Typo="Typo.h6" GutterBottom="true">
+                    🛠️ <strong>Tecnologias Utilizadas</strong>
+                </MudText>
+                <MudList T="string">
+                    <MudListItem>🎨 <strong>Frontend:</strong> MudBlazor para interface moderna e responsiva</MudListItem>
+                    <MudListItem>⚙️ <strong>Backend:</strong> .NET 9.0 para escalabilidade e desempenho</MudListItem>
+                    <MudListItem>🗄️ <strong>Banco de Dados:</strong> Entity Framework para gerenciamento de dados</MudListItem>
+                    <MudListItem>🔒 <strong>Autenticação:</strong> JWT para controle de acessos</MudListItem>
+                    <MudListItem>🔔 <strong>Notificações:</strong> Integração com serviços externos</MudListItem>
+                </MudList>
+            </ChildContent>
+        </MudExpansionPanel>
+    </MudExpansionPanels>
+
+
+</MudContainer>
+
 
 @code {
-    private ChartOptions Options = new ChartOptions
-        {
-            LineStrokeWidth = 20,
-            YAxisTicks = 1
-        };
-
-    private String[] XAxisLabels { get; set; } = [];
-    private List<ChartSeries> Series { get; set; } = new();
-
-    private double[] data { get; set; } = [];
-    private string[] labels { get; set; } = [];
-
-    protected override async Task OnInitializedAsync()
-    {
-        var result = await repository.GetReportAsync();
-
-        if (result is null || !result.Any())
-            return;
-
-        MontaGraficoBarra(result);
-        MontaGraficoTorta(result);
-    }
-
-    private void MontaGraficoBarra(List<AgendamentosAnuais> agendamentos)
-    {
-        XAxisLabels = agendamentos
-                        .Select(x => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(x.Mes)).ToArray();
-
-        var serie = new ChartSeries
-            {
-                Name = "Atendimentos Mensais",
-                Data = agendamentos.Select(x => (double)x.Quantidade).ToArray()
-            };
-
-        Series.Add(serie);
-    }
-
-    private void MontaGraficoTorta(List<AgendamentosAnuais> agendamentos)
-    {
-        labels = agendamentos
-                    .Select(x => CultureInfo.CurrentCulture.DateTimeFormat.GetMonthName(x.Mes)).ToArray();
-
-        data = agendamentos.Select(x => (double)x.Quantidade).ToArray();
-    }
+    bool _inline;
 }
-

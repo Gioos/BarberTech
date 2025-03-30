@@ -1,7 +1,6 @@
 using BarberTech.Components;
 using BarberTech.Components.Account;
 using BarberTech.Data;
-using BarberTech.Models;
 using BarberTech.Repositories.Agendamentos;
 using BarberTech.Repositories.Barbeiros;
 using BarberTech.Repositories.Clientes;
