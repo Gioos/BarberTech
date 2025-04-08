@@ -1,5 +1,8 @@
 **BarberTech**
 
+![Banner do projeto](assets/barbertech.png)
+
+
 Aplicação para o gerenciamento de clientes, barbeiros e agendamentos em uma barbearia. Desenvolvido com MudBlazor e .NET 9, acesso ao banco de dados SQL Server com Entity Framework. O sistema oferece uma interface responsiva e intuitiva, permitindo o controle eficiente dos serviços prestados.
 
 ##
