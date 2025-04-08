@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BarberTech")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7442021a4e23098508b14b9d0c850fc44a02346")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3af70d2c661c3b735bdd9b6e5d6303cfb4ef4f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("BarberTech")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BarberTech")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
